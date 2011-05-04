@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+war.baseName = 'jee5-eksempler'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    runtime project(':ejb')
+    compile 'org.apache.openejb:javaee-api:5.0-2'
+    testCompile 'junit:junit:4.8.2'
+}
