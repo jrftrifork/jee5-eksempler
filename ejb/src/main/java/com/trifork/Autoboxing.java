@@ -3,6 +3,7 @@ package com.trifork;
 import java.util.ArrayList;
 import java.util.List;
 
+@AnnotatedMyWay(value={"ab", "de"}, meanIt = true)
 public class Autoboxing {
     List<Integer> scores = new ArrayList<Integer>();
     

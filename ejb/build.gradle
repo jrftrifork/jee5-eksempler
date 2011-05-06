@@ -2,11 +2,14 @@ apply plugin: 'java'
 
 jar.baseName = 'jee5-eksempler'
 
+
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    runtime 'log4j:log4j:1.2.16'
     compile 'org.apache.openejb:javaee-api:5.0-2'
     testCompile 'junit:junit:4.8.2'
 }
